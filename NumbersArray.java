@@ -35,7 +35,7 @@ public class NumbersArray {
 
     }
 
-    public static int[] findDuplicates(Integer[] arr) {
+    public static Integer[] findDuplicates(Integer[] arr) {
         //M1 --> create a count arr
         //M2 --> nested for loop to check each rnd if there is a duplicate
         //M3 --> track with hash set
@@ -53,7 +53,7 @@ public class NumbersArray {
             value.add(no);
         }
 
-        int[] ans = new int[id];
+        Integer[] ans = new Integer[id];
         for (int i = 0; i < id; i++) {
             ans[i] = res[i];
         }
@@ -61,7 +61,7 @@ public class NumbersArray {
         return ans;
     }
 
-    public static int[] findUnique(Integer[] arr) {
+    public static Integer[] findUnique(Integer[] arr) {
         int[] res = new int[arr.length];
         int id = 0;
         boolean repeat = false;
@@ -81,7 +81,7 @@ public class NumbersArray {
             repeat = false;
         }
 
-        int[] ans = new int[id];
+        Integer[] ans = new Integer[id];
         for (int i = 0; i < id; i++) {
             ans[i] = res[i];
         }
